@@ -8,6 +8,18 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<groupId>com.iamneo</groupId>
+	<artifactId>ProjectManagementSystem</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ProjectManagementSystem</name>
+	<description>Project Management System</description>
+	<properties>
+		<java.version>21</java.version>
+=======
+>>>>>>> refs/remotes/origin/main
 	<groupId>com.example</groupId>
 	<artifactId>PractiseProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -15,6 +27,10 @@
 	<description>This is my second attempt of trying the project and at first time I got an issue in sending requests.</description>
 	<properties>
 		<java.version>17</java.version>
+<<<<<<< HEAD
+=======
+>>>>>>> 69af536 (This is the first commit I am making to my repo)
+>>>>>>> refs/remotes/origin/main
 	</properties>
 	<dependencies>
 		<dependency>
@@ -50,12 +66,21 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
+>>>>>>> 69af536 (This is the first commit I am making to my repo)
+>>>>>>> refs/remotes/origin/main
 	</dependencies>
 
 	<build>
