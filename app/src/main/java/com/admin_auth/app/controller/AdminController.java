@@ -24,23 +24,23 @@ public class AdminController {
 
     @PostMapping
     @Secured("ROLE_ADMIN")
-    public Admin saveCustomer(@RequestBody Admin admin){
+    public Admin saveAdmin(@RequestBody Admin admin){
         return admin_service.save(admin);
     }
 
     @GetMapping
-    public Iterable<Admin> getAllCustomers(){
+    public Iterable<Admin> getAllAdmins(){
         return admin_service.findAll();
     }
 
-    @GetMapping("/{id}")
-    public Optional<Admin> getCustomerById(@PathVariable("AdminId") Long id){
-        return admin_service.findName(id);
+    @GetMapping("/details/{AdminId}")
+    public Optional<Admin> getAdminById(@PathVariable("AdminId") Long AdminId){
+        return admin_service.findName(AdminId);
     }
 
     @PutMapping("/{id}")
     @Secured("ROLE_ADMIN")
-    public Admin updateCustomer(@PathVariable("AdminId") Long id, @RequestBody Admin admin){
+    public Admin updateAdmin(@PathVariable("AdminId") Long id, @RequestBody Admin admin){
         admin.setAdminId(id);
         return admin_service.save(admin);
     }
